@@ -17,8 +17,7 @@ class Book_keeper {
         while(d) {
             System.out.println("Select an option:\n1.Issue\n2.Return"); 
             n = sc.nextInt();        
-            switch (n) {
-                case 1:
+                if(n==1) {
                     System.out.println(books);
                     System.out.println("Select book to issue:");
                     type = sc.next();
@@ -31,8 +30,8 @@ class Book_keeper {
                     else {
                         System.out.println("No books available");
                     }
-                    break;
-                case 2:
+                }
+                else if(n==2) {
                     System.out.println(books);
                     System.out.println("Select book to return:"); 
                     book = sc.next();
@@ -49,12 +48,11 @@ class Book_keeper {
                     else {
                         System.out.println("Invalid option");
                     }
-                    break;
-    
-                default:
+                }    
+                else {
                     System.out.println("Invalid option");
-                    break;
-            } 
+                } 
+                
             System.out.println("Do you want to continue(y/n): ");
             String c = sc.next();
             if(c=="y") {
