@@ -1,5 +1,9 @@
-import java.util.*;
-
+import java.util.Scanner;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Hashtable;
+import java.util.Map;
+import java.util.Set;
 
 
 public class Chimp1 {
@@ -20,7 +24,7 @@ public class Chimp1 {
         for(int i=0;i<size;i++) {
             int diff = target - nums.get(i); // 5 - 2 = 3
             if(nums.contains(diff)) {
-                ans[0] = nums.get(i);
+                ans[0] = i;
                 ans[1] = diff;
                 break;
             }
