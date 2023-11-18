@@ -10,10 +10,10 @@ public class PalindromeName {
             rev_name = rev_name.concat(Character.toString(letter));
         }
         if (rev_name.equals(name)) {
-            System.out.println("it is a palindrome");
+            System.out.println("It is a palindrome");
         }
         else{
-            System.out.println("it is not a palindrome");
+            System.out.println("It is not a palindrome");
         }
         obj.close();
     }
